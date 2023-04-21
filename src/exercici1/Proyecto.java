@@ -11,8 +11,10 @@ public class Proyecto {
         TrabajadorOnline online1 = new TrabajadorOnline("Carla", "Perez", 11);
 
         // Invocar métodos obsoletos con supresión de warnings
-
-
+        @SuppressWarnings("deprecation")
+        String mensaje = presencial1.presencial();
+        @SuppressWarnings("deprecation")
+        String mensaje2 = online1.online();
 
     }
 

@@ -11,13 +11,21 @@ public class TrabajadorOnline extends Trabajador{
     }
 
 
+
+    @Deprecated
+    public String online() {
+        String mensaje2 = "Soy un trabajador de modalidad online";
+        return mensaje2;
+    }
+
     @Override
     public double calcularSueldo() {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Introduce las horas trabajadas");
         double horas = entrada.nextDouble();
-        return (horas * super.getPrecioHora())+TARIFAINTERNET;
+        return (horas * super.getPrecioHora()) + TARIFAINTERNET;
     }
+
 
 
 }

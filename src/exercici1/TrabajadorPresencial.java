@@ -9,6 +9,11 @@ public class TrabajadorPresencial extends Trabajador{
         super(nombre, apellido, precioHora);
     }
 
+    @Deprecated
+    public String presencial() {
+        String mensaje = "Soy un trabajador de modalidad presencial";
+        return mensaje;
+    }
 
     @Override
     public double calcularSueldo() {
